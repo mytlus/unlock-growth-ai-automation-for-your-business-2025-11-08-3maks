@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unlock Growth with AI Automation. Twenty One AI Automation Agency builds intelligent AI solutions that elevate business efficiency and drive unprecedented growth.">
+    <meta name="keywords" content="AI automation, business intelligence, process automation, AI solutions">
+    <meta name="author" content="Twenty One AI Automation Agency">
+    <title>Unlock Growth: AI Automation for Your Business | Twenty One AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-blue {
+            background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+        }
+        
+        .gradient-blue-light {
+            background: linear-gradient(135deg, #e6f0ff 0%, #f0f7ff 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .button-primary {
+            @apply px-8 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2;
+        }
+        
+        .button-primary-solid {
+            @apply button-primary bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:scale-105 active:scale-95;
+        }
+        
+        .button-primary-outline {
+            @apply button-primary border-2 border-blue-600 text-blue-600 hover:bg-blue-50 hover:shadow-md;
+        }
+        
+        .card-hover {
+            @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+        }
+        
+        .feature-card {
+            @apply bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100;
+        }
+        
+        .faq-item {
+            @apply border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300;
+        }
+        
+        .faq-question {
+            @apply w-full p-6 flex items-center justify-between cursor-pointer hover:bg-blue-50 transition-colors duration-300 font-semibold text-gray-900;
+        }
+        
+        .faq-icon {
+            @apply transition-transform duration-300 text-blue-600;
+        }
+        
+        .faq-answer {
+            @apply px-6 pb-6 text-gray-700 leading-relaxed;
+        }
+        
+        .testimonial-card {
+            @apply bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100;
+        }
+        
+        .star-rating {
+            @apply flex gap-1;
+        }
+        
+        .star {
+            @apply text-yellow-400;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 flex-shrink-0">
+                <div class="w-10 h-10 gradient-blue rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">T1</span>
+                </div>
+                <span class="font-bold text-xl text-gray-900 hidden sm:inline">Twenty One AI</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Testimonials</a>
+            </div>
+            
+            <!-- Desktop CTA -->
+            <div class="hidden md:block">
+                <a href="https://www.test.com" class="button-primary-solid">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors duration-300">
+                <i class="fas fa-bars text-2xl text-gray-900"></i>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Testimonials</a>
+                    <a href="https://www.test.com" class="button-primary-solid justify-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-20">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="space-y-8">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
+                    Unlock Growth: <span class="gradient-text">AI Automation for Your Business</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-light">
+                    Outperform competitors and streamline operations with Twenty One AI Automation Agency. We build intelligent AI solutions that elevate your business efficiency and drive unprecedented growth.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+                    <a href="https://www.test.com" class="button-primary-solid justify-center">
+                        <i class="fas fa-arrow-right"></i>
+                        Start Your AI Journey Today
+                    </a>
+                    <button class="button-primary-outline justify-center">
+                        <i class="fas fa-play-circle"></i>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Powerful AI Capabilities Built for Modern Businesses
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Our comprehensive suite of AI automation features is designed to transform how your business operates, making complex processes simple and efficient.
+                </p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Custom AI Workflow Design -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom AI Workflow Design</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Tailored automation workflows specifically engineered for your unique business processes. Our expert team designs intelligent systems that seamlessly integrate with your existing infrastructure, ensuring maximum efficiency and minimal disruption to operations.
+                    </p>
+                </div>
+                
+                <!-- Feature 2: Predictive Analytics -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Predictive Analytics & Insights</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Advanced machine learning algorithms analyze your business data to reveal actionable insights and predict future trends. Make data-driven decisions with confidence, anticipate market changes, and stay ahead of your competition with intelligent forecasting.
+                    </p>
+                </div>
+                
+                <!-- Feature 3: Intelligent Process Automation -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Intelligent Process Automation (IPA)</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Eliminate manual, repetitive tasks with our sophisticated automation engine. From data entry to complex decision-making, our IPA solutions handle routine operations intelligently, allowing your team to focus on strategic initiatives that drive real business value.
+                    </p>
+                </div>
+                
+                <!-- Feature 4: 24/7 AI Support -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 AI-Powered Support Systems</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Round-the-clock intelligent support that never sleeps. Our AI-powered customer service systems provide instant responses, resolve issues faster, and ensure your customers always receive the help they need, improving satisfaction and loyalty.
+                    </p>
+                </div>
+                
+                <!-- Feature 5: Scalable Solutions -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Scalable AI Solutions</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Grow without limits. Our cloud-based AI infrastructure scales effortlessly with your business, handling increased workloads and complexity without performance degradation. From startups to enterprises, our solutions grow with you.
+                    </p>
+                </div>
+                
+                <!-- Feature 6: Advanced Integration -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5A2.25 2.25 0 008.25 22.5h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 15h3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Seamless Integration</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Connect effortlessly with your existing tools and systems. Our AI solutions integrate with popular platforms and custom applications, ensuring smooth data flow and unified operations across your entire technology ecosystem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Transform Your Business with Measurable Results
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Experience tangible improvements across every aspect of your operations. Our AI solutions deliver real, quantifiable benefits that impact your bottom line.
+                </p>
+            </div>
+            
+            <!-- Benefits Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Benefit 1 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-gradient-blue rounded-full flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Reduce Operational Costs by up to 40%</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Dramatically slash operational expenses through intelligent automation. Eliminate redundant processes, minimize errors, and reduce manual labor costs. Our clients report average cost reductions of 30-40% within the first year of implementation, with continued savings as systems optimize over time.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-gradient-blue rounded-full flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Increase Productivity & Efficiency Instantly</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Boost team productivity immediately by automating time-consuming tasks. Your workforce can focus on high-value activities that require human creativity and judgment. Experience productivity gains of 50% or more as your team works smarter, not harder, with AI assistance.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-gradient-blue rounded-full flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Gain Deeper Customer & Market Understanding</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Unlock powerful insights into customer behavior, preferences, and market trends. Our predictive analytics reveal patterns invisible to traditional analysis, enabling you to make informed strategic decisions and stay ahead of market shifts with confidence.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-gradient-blue rounded-full flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Free Up Your Team for Strategic Tasks</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Empower your employees to focus on innovation and strategy instead of routine work. By handling repetitive tasks automatically, your team can dedicate their expertise to projects that drive growth, improve customer experience, and create competitive advantage.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="flex gap-6 md:col-span-2 lg:col-span-1">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-gradient-blue rounded-full flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Achieve Sustainable, Accelerated Growth</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Scale your business intelligently with AI-powered operations. Achieve sustainable growth by improving efficiency, reducing costs, and enhancing customer satisfaction simultaneously. Our solutions enable you to do more with existing resources, maximizing ROI and long-term profitability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="relative h-96 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" alt="Twenty One AI Team Collaboration" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent"></div>
+                </div>
+                
+                <!-- Content -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            About Twenty One AI
+                        </h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Founded in 2020 by a team of AI researchers and enterprise automation experts, Twenty One AI emerged from a simple yet powerful vision: to democratize artificial intelligence and make it accessible to businesses of all sizes. What started as a small startup in Silicon Valley has evolved into a leading AI automation agency, serving over 500 clients across diverse industries including finance, healthcare, retail, and manufacturing. Our founding team recognized that most businesses lacked the resources to build sophisticated AI solutions in-house, so we set out to bridge that gap by creating a platform that combines cutting-edge technology with practical business expertise.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            At our core, we believe that AI should empower people, not replace them. Our mission is to help organizations harness the transformative power of artificial intelligence to solve real business challenges, improve operational efficiency, and unlock new opportunities for growth. We're committed to transparency, ethical AI practices, and delivering measurable ROI for every client partnership. Our values of innovation, integrity, and customer-centricity guide every solution we build. We invest heavily in continuous research and development, ensuring our clients always have access to the latest advancements in machine learning, natural language processing, and intelligent automation technologies.
+                        </p>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 gap-6 pt-8 border-t border-gray-200">
+                        <div>
+                            <div class="text-4xl font-bold gradient-text mb-2">500+</div>
+                            <p class="text-gray-700 font-medium">Active Clients</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold gradient-text mb-2">$2B+</div>
+                            <p class="text-gray-700 font-medium">Cost Savings Generated</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold gradient-text mb-2">98%</div>
+                            <p class="text-gray-700 font-medium">Client Satisfaction</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold gradient-text mb-2">24/7</div>
+                            <p class="text-gray-700 font-medium">Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Hear from businesses that have transformed their operations with Twenty One AI Automation solutions.
+                </p>
+            </div>
+            
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-lg">JM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Jennifer Martinez</h4>
+                            <p class="text-sm text-gray-600">VP Operations, TechFlow Inc.</p>
+                        </div>
+                    </div>
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Twenty One AI transformed our customer service operations completely. We implemented their AI-powered support system and within three months, we reduced response times by 75% while handling 3x more customer inquiries. Our team now focuses on complex issues that require human touch, and customer satisfaction scores have never been higher. The ROI was undeniable—we recovered our investment in just four months."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-lg">RK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Rajesh Kumar</h4>
+                            <p class="text-sm text-gray-600">Finance Director, Global Ventures Ltd.</p>
+                        </div>
+                    </div>
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "The predictive analytics solution from Twenty One AI has revolutionized how we forecast revenue and manage cash flow. Their machine learning models identify patterns we never could have detected manually. We've improved our forecasting accuracy by 40% and made significantly better financial decisions as a result. Highly recommend!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-lg">SK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah Kim</h4>
+                            <p class="text-sm text-gray-600">CEO, Digital Innovators Co.</p>
+                        </div>
+                    </div>
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "What impressed me most about Twenty One AI was their ability to understand our unique business needs and design a custom solution. Their team didn't just implement technology—they became true partners in our transformation. We've cut manual data processing by 85% and our team's productivity has skyrocketed. The scalability of their platform means we can grow without worrying about infrastructure limitations."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-lg">MC</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Michael Chen</h4>
+                            <p class="text-sm text-gray-600">Operations Manager, RetailMax</p>
+                        </div>
+                    </div>
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Implementing Twenty One AI's intelligent process automation has been a game-changer for our supply chain. We now have real-time visibility into our inventory, automated ordering based on predictive demand, and significantly reduced waste. Our operational costs dropped 35% in the first year, and we're delivering products to customers faster than ever before. The support team has been exceptional throughout the entire journey."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop" alt="Business Growth" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-700/90"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-blue-50 mb-10 leading-relaxed">
+                Join hundreds of forward-thinking companies that have already unlocked unprecedented growth with Twenty One AI. Let's discuss how we can help you achieve your business goals.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.test.com" class="px-8 py-4 rounded-full font-semibold bg-white text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-rocket"></i>
+                    Schedule Your Free Consultation
+                </a>
+                <button class="px-8 py-4 rounded-full font-semibold border-2 border-white text-white hover:bg-white/10 transition-all duration-300 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i>
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">T1</span>
+                        </div>
+                        <span class="font-bold text-white text-lg">Twenty One AI</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Transforming businesses through intelligent AI automation solutions that drive growth and efficiency.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="hover:text-blue-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Security</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 Twenty One AI Automation Agency. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        Contact: <a href="mailto:test@example.com" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">test@example.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle (if FAQ section exists)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
